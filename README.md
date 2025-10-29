@@ -1,1 +1,1 @@
-# Christian-Truth-And-Faith-Ministry
+# Eternal-Faith-And-Truth-Christian-Ministries
