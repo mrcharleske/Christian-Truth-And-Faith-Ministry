@@ -36,8 +36,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <div class="text-2xl font-bold text-purple-700">CFTM</div>
-                    <div class="ml-3 text-sm text-gray-600">Christian Faith & Truth Ministry</div>
+                    <img src="images/logo.png" alt="CFTM Logo" class="h-10 w-auto">
+                    <div class="ml-3 hidden sm:block">
+                        <div class="text-sm font-semibold text-gray-700">Christian Faith & Truth Ministry</div>
+                    </div>
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#home" class="nav-link text-gray-700 hover:text-purple-700 transition-colors">Home</a>
@@ -74,8 +76,12 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="gradient-bg text-white pt-20 pb-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="home" class="relative text-white pt-20 pb-16 overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="images/hero.jpg" alt="Church Worship" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900 via-purple-900 to-red-900 opacity-80"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center py-20">
                 <h1 class="text-5xl md:text-6xl font-black mb-6 fade-in tracking-tight">Christian Faith & Truth Ministry</h1>
                 <p class="text-xl md:text-2xl mb-8 fade-in font-bold">"And ye shall know the truth, and the truth shall make you free" - John 8:32</p>
@@ -136,8 +142,8 @@
                 </div>
                 <div class="text-center">
                     <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
-                        <div class="w-32 h-32 bg-purple-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                            <span class="text-purple-700 text-4xl font-bold">AP</span>
+                        <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden ring-4 ring-purple-600 shadow-lg">
+                            <img src="images/pastor.jpg" alt="Apostle Patrick Musyoka" class="w-full h-full object-cover">
                         </div>
                         <h4 class="text-xl font-semibold text-gray-900 mb-2">Apostle Patrick Musyoka</h4>
                         <p class="text-purple-700 font-medium mb-2">Founder & Senior Pastor</p>
@@ -156,7 +162,11 @@
                 <p class="text-gray-600">Join us for these special gatherings and celebrations</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Christmas -->
                 <div class="bg-white border rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/event-christmas.jpg" alt="Christmas Celebration" class="w-full h-full object-cover">
+                    </div>
                     <div class="bg-purple-600 text-white p-4">
                         <div class="text-center">
                             <div class="text-2xl font-bold">15</div>
@@ -169,7 +179,11 @@
                         <p class="text-sm text-purple-700 font-medium">10:00 AM - 12:00 PM</p>
                     </div>
                 </div>
+                <!-- New Year -->
                 <div class="bg-white border rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/event-newyear.jpg" alt="New Year's Eve Service" class="w-full h-full object-cover">
+                    </div>
                     <div class="bg-purple-600 text-white p-4">
                         <div class="text-center">
                             <div class="text-2xl font-bold">31</div>
@@ -182,7 +196,11 @@
                         <p class="text-sm text-purple-700 font-medium">10:00 PM - 12:30 AM</p>
                     </div>
                 </div>
+                <!-- Fasting -->
                 <div class="bg-white border rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/event-fasting.jpg" alt="40 Days of Prayer & Fasting" class="w-full h-full object-cover">
+                    </div>
                     <div class="bg-purple-600 text-white p-4">
                         <div class="text-center">
                             <div class="text-2xl font-bold">07</div>
@@ -207,7 +225,11 @@
                 <p class="text-gray-600">Listen to powerful messages that will strengthen your faith</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Sermon 1 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 overflow-hidden rounded-t-lg">
+                        <img src="images/sermon1.jpg" alt="Walking in Divine Purpose" class="w-full h-full object-cover">
+                    </div>
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-4">
                             <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">Latest</span>
@@ -218,7 +240,11 @@
                         <button class="w-full bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors">Listen Now</button>
                     </div>
                 </div>
+                <!-- Sermon 2 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 overflow-hidden rounded-t-lg">
+                        <img src="images/sermon2.jpg" alt="The Power of Faith" class="w-full h-full object-cover">
+                    </div>
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-4">
                             <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Series</span>
@@ -229,7 +255,11 @@
                         <button class="w-full bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors">Listen Now</button>
                     </div>
                 </div>
+                <!-- Sermon 3 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 overflow-hidden rounded-t-lg">
+                        <img src="images/sermon3.jpg" alt="Thanksgiving & Gratitude" class="w-full h-full object-cover">
+                    </div>
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-4">
                             <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Popular</span>
@@ -295,10 +325,11 @@
                 <p class="text-gray-600">See how God is moving in the lives of our community</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Mary -->
                 <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-purple-200 rounded-full flex items-center justify-center mr-4">
-                            <span class="text-purple-700 font-semibold">MK</span>
+                        <div class="w-12 h-12 rounded-full overflow-hidden ring-2 ring-purple-600 mr-4">
+                            <img src="images/person-mary.jpg" alt="Mary Kiprotich" class="w-full h-full object-cover">
                         </div>
                         <div>
                             <h4 class="font-semibold text-gray-900">Mary Kiprotich</h4>
@@ -307,10 +338,11 @@
                     </div>
                     <p class="text-gray-700 italic">"God completely transformed my life through this ministry. The teachings are so powerful and life-changing. I found my purpose and my family was restored. Glory to God!"</p>
                 </div>
+                <!-- John -->
                 <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-purple-200 rounded-full flex items-center justify-center mr-4">
-                            <span class="text-purple-700 font-semibold">JM</span>
+                        <div class="w-12 h-12 rounded-full overflow-hidden ring-2 ring-purple-600 mr-4">
+                            <img src="images/person-john.jpg" alt="John Mwangi" class="w-full h-full object-cover">
                         </div>
                         <div>
                             <h4 class="font-semibold text-gray-900">John Mwangi</h4>
@@ -320,7 +352,7 @@
                     <p class="text-gray-700 italic">"The prayers and support from this church family helped me through the darkest time of my life. God used Apostle Patrick to speak healing into my situation. I'm forever grateful!"</p>
                 </div>
             </div>
-            
+           
             <!-- Testimony Submission Form -->
             <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
                 <h3 class="text-2xl font-semibold text-gray-900 mb-6 text-center">Share Your Testimony</h3>
@@ -437,7 +469,7 @@
                     <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors">Contribute</button>
                 </div>
             </div>
-            
+           
             <!-- Partnership Form -->
             <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
                 <h3 class="text-2xl font-semibold text-gray-900 mb-6 text-center">Partnership Information</h3>
@@ -509,7 +541,7 @@
                         <div class="flex items-start">
                             <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                                 <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173010.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
                                 </svg>
                             </div>
                             <div>
@@ -553,6 +585,9 @@
                     </div>
                 </div>
                 <div>
+                    <div class="mb-8">
+                        <img src="images/church-building.jpg" alt="Our Church Building" class="w-full rounded-lg shadow-lg">
+                    </div>
                     <form id="contact-form" class="space-y-6">
                         <div class="grid md:grid-cols-2 gap-6">
                             <div>
@@ -650,7 +685,7 @@
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+       
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
@@ -665,7 +700,6 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
-                    // Close mobile menu if open
                     mobileMenu.classList.add('hidden');
                 }
             });
@@ -676,7 +710,6 @@
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -684,7 +717,6 @@
                 }
             });
         }, observerOptions);
-
         document.querySelectorAll('.fade-in').forEach(el => {
             observer.observe(el);
         });
@@ -699,7 +731,6 @@
                 successMsg.classList.add('hidden');
             }, 5000);
         });
-
         document.getElementById('prayer-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const successMsg = document.getElementById('prayer-success');
@@ -709,7 +740,6 @@
                 successMsg.classList.add('hidden');
             }, 5000);
         });
-
         document.getElementById('partnership-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const successMsg = document.getElementById('partnership-success');
@@ -719,7 +749,6 @@
                 successMsg.classList.add('hidden');
             }, 5000);
         });
-
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const successMsg = document.getElementById('contact-success');
@@ -736,12 +765,11 @@
             const now = new Date();
             const day = now.getDay();
             const hour = now.getHours();
-            
-            // Check if it's Sunday 10 AM, Wednesday 7 PM TikTok, or Prophetic services Tue/Fri 9 AM
-            const isLive = (day === 0 && hour >= 10 && hour < 12) || 
-                          (day === 3 && hour >= 19 && hour < 22) || 
+           
+            const isLive = (day === 0 && hour >= 10 && hour < 12) ||
+                          (day === 3 && hour >= 19 && hour < 22) ||
                           ((day === 2 || day === 5) && hour >= 9 && hour < 11);
-            
+           
             if (isLive) {
                 liveStatus.innerHTML = '<div class="w-2 h-2 bg-red-500 rounded-full mr-2 animate-pulse"></div><span class="text-sm">LIVE NOW</span>';
                 liveStatus.className = 'inline-flex items-center px-4 py-2 bg-red-600 rounded-full';
@@ -750,8 +778,6 @@
                 liveStatus.className = 'inline-flex items-center px-4 py-2 bg-gray-700 rounded-full';
             }
         }
-
-        // Update live status every minute
         updateLiveStatus();
         setInterval(updateLiveStatus, 60000);
 
@@ -759,7 +785,7 @@
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('section[id]');
             const navLinks = document.querySelectorAll('.nav-link');
-            
+           
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - 100;
@@ -767,7 +793,6 @@
                     current = section.getAttribute('id');
                 }
             });
-
             navLinks.forEach(link => {
                 link.classList.remove('text-purple-700', 'font-semibold');
                 link.classList.add('text-gray-700');
@@ -778,5 +803,5 @@
             });
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99149b67e34c8a67',t:'MTc2MDkyMjMyOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
